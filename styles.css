@@ -94,7 +94,7 @@ body{
     display: flex;
     flex-direction: column;
 
-    width: 100%;
+    min-width: 992px;
     height: 872px;
     margin-top: 65px;
 
@@ -146,6 +146,8 @@ body{
 /*----------------Features------------------*/
 .features-block{
     padding: 100px 0;
+
+    min-width: 992px;
 
     background-color: #fafafaff;
 }
@@ -213,15 +215,11 @@ body{
 .features__item1{
     width: 25%;
     margin-bottom: 70px;
-
-    text-align: center;
 }
 
 .features__item2{
     width: 25%;
     margin-bottom: 70px;
-
-    text-align: center;
 }
 
 .features__text{
@@ -235,8 +233,6 @@ body{
 }
 
 .features__link{
-    margin-right: 173px;
-
     cursor: pointer;
     transition: .1s linear;
     text-decoration: none;
@@ -261,6 +257,8 @@ body{
 /*----------------Products------------------*/
 #prod_container{
     margin: 120px 0 100px 0;
+
+    min-width: 992px;
 
     background-size: cover;
 }
@@ -324,7 +322,7 @@ body{
 /* ---------Clients------------ */
 
 .clients{
-    width: 100%;
+    min-width: 992px;
     height: 100px;
 
     background-color: #fcb040;
@@ -362,7 +360,7 @@ body{
     display: flex;
     flex-direction: column;
 
-    width: 100%;
+	min-width: 992px;
     max-width: 1902px;
     height: 400px;
 
@@ -440,6 +438,8 @@ body{
 
 /*-----------------Footer----------------------*/
 .footer{
+	min-width: 992px;
+
     height: 500px;
     padding-top: 150px;
 }
@@ -555,3 +555,82 @@ body{
 .check_mark{
     opacity: .5;
 }
+
+/*----------Media----------------*/
+@media(max-width: 1901px){
+	.products__item{
+		width: 42%;
+		margin-bottom: 50px;
+	}
+}
+
+@media(max-width: 1651px){
+	.products__item{
+		width: 40%;
+	}
+}
+
+@media(max-width: 1281px){
+	.products{
+		margin-left: 300px;
+	}
+
+	.products__item{
+		width: 35%;
+	}
+}
+
+@media(max-width: 1024px){
+	.products{
+		margin-left: 300px;
+	}
+	
+	.products__item{
+		width: 50%;
+	}
+}
+
+
+@media(max-width: 767px){
+	.intro{
+		height: auto;
+		padding-bottom: 150px;
+		padding-top: 150px;
+	}
+}
+
+
+@media(max-width: 650px) {
+	.burger{
+		display: block;
+	}
+}
+
+
+
+/*=====================================
+1) Сделать красивую адаптацию под моб.
+2) Выложить в новом дизайне на gitHub
+3) Проверить на разных телефонах
+=======================================*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
