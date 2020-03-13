@@ -1,275 +1,290 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<script src="script.js" defer></script>
-<script>
-	document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')
-</script>
-
 <head>
 	<meta charset="UTF-8">
-	<link rel="stylesheet" href="styles.css">
-	<link href="https://fonts.googleapis.com/css?family=Squada+One&display=swap" rel="stylesheet">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Booster</title>
 
-	<!------- favicons -------->
-		<link rel="apple-touch-icon" sizes="120x120" href="img/favicons/apple-touch-icon.png">
-		<link rel="icon" type="image/png" sizes="32x32" href="img/favicons/favicon-32x32.png">
-		<link rel="icon" type="image/png" sizes="16x16" href="img/favicons/favicon-16x16.png">
-		<link rel="manifest" href="img/favicons/site.webmanifest">
-		<link rel="mask-icon" href="img/favicons/safari-pinned-tab.svg" color="##5bbad5">
-		<meta name="msapplication-TileColor" content="##ee8e12">
-		<meta name="theme-color" content="##ffffff">
-	<!------------------------->
+	<link rel="stylesheet" href="styles.css">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600,700,800&display=swap" rel="stylesheet">
+
+	
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script> <!-- scroll -->
+
+	<script>//livereload
+		document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>') 
+	</script>
+
+	<script src="script.js" defer></script>
+	<title>Agnecy</title>
 </head>
-
 <body>
 
-<!-- Header -->
-	<header class="header" onmousedown="return false" onselectstart="return false">
-		<div class="fixed__header">
-			<div class="container">
+<!-- Header -->	
+	<header class="header">
+		<div class="container" id="header__container">
 				<div class="header__inner">
-					<h2 class="logo">Booster</h2>
-					
 					<nav class="nav">
-						<a class="nav__link" href="##">Home</a>
-						<a class="nav__link" href="##">Features</a>
-						<a class="nav__link" href="##">Products</a>
-						<a class="nav__link" href="##">Clients</a>
+						<a class="nav__link nav__link_active" href="#">Home</a>
+						<a class="nav__link" href="#feature_products">Products</a>
+						<a class="nav__link" href="#team__block">About Us</a>
+						<a class="nav__link" href="#footer">contact</a>
 					</nav>
-
-				</div> <!-- header__inner -->
-			</div> <!-- container -->
-		</div> <!-- fixed__header -->	
+				</div>	<!-- header__inner -->
+		</div><!-- container -->
 	</header>
 
 <!-- Intro -->
-	<div class="intro" onmousedown="return false" onselectstart="return false">
+	<div class="intro">
 		<div class="container">
 			<div class="intro__inner">
 
-				<h1 class="intro__title">Booster studio</h1>
-				<h2 class="intro__subtitle">Booster is a free responsive HTML5 template using bootstrap released under Creative Commons 3.0. Lovely crafted by FREEHTML5.co</h2>
-			</div> <!-- intro__inner -->
-		</div> <!-- container -->
-	</div> <!-- Intro -->
+				<div class="intro__item">
+					<h1 class="intro__title">O­U­R S­T­R­O­N­G organaisation</h1>
+					<h4 class="intro__subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit, necessitatibus, veritatis magni obcaecati. dignissimos pariatur eius ullam assumenda, non omnis pariatur eius.</h4>
+					<a class="btn" href="#footer">Contact Us</a>
+				</div><!-- info -->
 
-<!-- Features -->
-	<div class="features-block" onmousedown="return false" onselectstart="return false">
-		<div class="container">	
+				<div class="intro__item">
+					<video id="video" width="550px" height="355px" controls muted src="video/WWDC 2019 — Goodnight Developers — Apple.mp4" poster="img/video_poster.jpg"></video>
+				</div><!-- video -->
+
+			</div>	<!-- intro__inner -->
+		</div><!-- container -->
+	</div>	<!-- intro -->
+
+<!-- Services -->
+	<div class="services">
+		<div class="container">
+			<div class="services__inner">
+				
+				<div class="services__item">
+					
+					<h2 class="services__title">D­O Y­O­U K­N­O­W W­E C­A­N P­R­O­V­I­D­E F­O­R Y­O­U ?</h2>
+
+					<h4 class="services__subtitle">Lorem ipsum dolor sit amet, consectetur adipisi cing elit. Sint laudantium, iure earum asperiores beatae quis voluptates qui perspiciatis, nisi sit dolore labore provident, voluptatem odio officia praesentium ea optio ducimus.</h4>
+
+					<a class="btn" href="#feature_products">Learn More</a>
+				</div><!-- services__item -->
+
+				<div class="services__item services__second__item">
+					
+					<div class="service" id="upper_subtitles">
+						<img src="img/service icons/Management_icon.png" alt="icon" id="management_icon">
+
+						<h3 class="service__title">Management</h3>
+
+						<h4 class="service__subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis repellat fuga, eveniet quo inventore quibusdam repellat.</h4>
+					</div> <!-- service -->	
+
+					<div class="service" id="upper_subtitles" >
+						<img src="img/service icons/ui_icon.png" alt="icon" id="design_icon">
+
+						<h3 class="service__title">UI /UX Design</h3>
+
+						<h4 class="service__subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis repellat fuga, eveniet quo inventore quibusdam sit amet.</h4>
+					</div> <!-- service -->
+					
+					<div class="service">
+						<img src="img/service icons/logo-branding.png" alt="icon" id="branding_icon">
+
+						<h3 class="service__title">Logo / Branding</h3>
+
+						<h4 class="service__subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore porro enim odit, tempora, aut illo nesciunt non dolores nulla.</h4>
+					</div> <!-- service -->
+					
+					<div class="service">
+						<img src="img/service icons/Animation_icon.png" alt="icon" id="car_icon">
+
+						<h3 class="service__title">Animation</h3>
+
+						<h4 class="service__subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis repellat fuga, eveniet quo inventore quibusdam sit amet.</h4>
+					</div> <!-- service -->
+
+				</div><!-- services__second__item -->
+
+			</div><!-- services__inner -->
+		</div><!-- container -->
+	</div><!-- services -->
+
+<!-- Feature_products -->
+	<div id="feature_products">
+		<div class="container">
+			<div class="feature_products_inner">
 			
-			<div class="first__inner">
-				<div class="key">
-					<h3 class="key__title">Key features</h3>
-					<div class="key__text">Far far away, behind the word mountains, far from the countries Vokalia and Consonatia, there live the blind texts. Separated they live in Bookmarkgrove right at the coast of the Semanthics, a large language ocean.</div>
-				</div> <!-- key -->	
-			</div> <!-- container__inner -->	
+				<div class="title__block">
+					<h2 class="feature_products_title">feature products</h2>
 
-			<div class="features">
-				<!--------Shopping bag---------------------------->
-				<img class="icon1" src="img/features/shop-bag(orange).png" width="100" height="100" alt="Shopping Bag">
+					<h4 class="feature_products_subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos, ducimus possimus quas eos alias.</h4>
+
+					<div class="red--line"></div>
+				</div><!-- feature_products_inner -->
+
+				<nav class="nav__bar">
+						<a class="bar__link" href="##">all</a>
+						<a class="bar__link" href="##">print template</a>
+						<a class="bar__link" href="##">web template</a>
+						<a class="bar__link" href="##">user interface</a>
+						<a class="bar__link" href="##">mock-up</a>
+				</nav>
+
+				<div class="img__blocks">
+					<img class="img__block" src="img/features products/1.jpg"></img>
+					<img class="img__block" src="img/features products/2.jpg"></img>
+					<img class="img__block" src="img/features products/3.png"></img>
+					<img class="img__block" src="img/features products/4.jpg"></img>
+					<img class="img__block" src="img/features products/5.png"></img>
+					<img class="img__block" src="img/features products/6.jpg"></img>
+					<img class="img__block" src="img/features products/7.jpg"></img>
+					<img class="img__block" src="img/features products/8.png"></img>
+				</div><!-- img__blocks -->
+
+			</div><!-- feature_products_inner -->
+		</div><!-- container -->
+	</div><!-- feature_products -->
+
+<!-- Team_block -->
+	<div id="team__block">
+		<div class="container">
+			<div class="team__block__inner">
 				
-				<div class="features__item1">
-					<h4 class="features__title">Shopping Bag</h4>
-					<div class="features__text">Far far away, behind the word mountains, far from the countries Vokalia	<span id="dots1">...</span><span id="more1">and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</span></div>
-					<a class="features__link" onclick="readMore()" id="btn1">Read more</a>
+				<div class="team__block__meet">
+					<h2 class="meet__title">Meet our team</h2>
+
+					<h4 class="meet__subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam laborum, non nihil laudantium, minima quia error eius quos earum.</h4>
+
+					<div class="red--line" id="lefted_line"></div>
+				</div><!-- team__block__meet -->
+
+				<div class="team">
+					<div class="selected__image"></div>
+
+					<div class="remaining">
+						<div class="remaining__title">jane larsen</div>
+
+						<h4 class="remaining__subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam laborum, non nihil laudantium, minima quia error eius quos earum.</h4>
+
+						<div class="social__menu">
+							<a class="social" href="##">Facebook</a>
+							<a class="social" href="##">Dribble</a>
+							<a class="social" href="##">Behance</a>
+							<a class="social" href="##">Twiter</a>
+						</div>
+
+						<div class="remaining__teamates">
+							<div class="box">
+								<div class="overlay">Olivia smith</div>
+								<img src="img/team/1,5.jpg" class="teamates" width="196px" height="214px">
+							</div>
+							<div class="box">
+								<div class="overlay">tomas aldridge</div>
+								<img src="img/team/2.jpg" class="teamates" width="196px" height="214px">
+							</div>
+							<div class="box">
+								<div class="overlay">ben Ellington</div>
+								<img src="img/team/3.jpg" class="teamates" width="196px" height="214px">
+							</div>
+							<div class="box">
+								<div class="overlay">olga egorova</div>
+								<img src="img/team/4.jpg" class="teamates egorova" width="196px" height="214px" style="">
+							</div>
+						</div><!-- remaining__teamates -->
+					
+					</div><!-- remaining -->
+
+				</div><!-- team -->
+
+			</div><!-- team__block__inner -->
+		</div><!-- container -->
+	</div><!-- team__block -->
+
+<!-- Subscribe_block -->
+	<div class="subscribe_block">
+		<div class="container">
+			<div class="subscribe_inner">
+				<h2>Design tips, tricks, and freebies. Delivered weekly.</h2>
+
+				<h4 class="subscribe_subtitle">Lorem ipsum dolor sit amet, consectetur adipis cing elit, sed do adipis.</h4>
+				<div class="input">
+					<input class="subscribe__textbox" type="email" placeholder="Email Address...">
+					<a class="btn" id="subscibe_btn" href="##" onclick="alert('Sorry...This site for example only')">Subscribe</a>
 				</div>
-
-				<!--------Voice recording------------------------->
-				<img class="icon2" src="img/features/voice(orange).png" width="100" height="100" alt="Voice Recording">
-				
-				<div class="features__item1">
-					<h4 class="features__title">Voice Recording</h4>
-					<div class="features__text">Far far away, behind the word mountains, far from the countries Vokalia	<span id="dots2">...</span><span id="more2">and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</span></div>
-					<a class="features__link" onclick="readMore()" id="btn2">Read more</a>
-				</div>
-
-				<!-----------User Satisfaction-------------------->
-				<img class="icon3" src="img/features/user(orange).png" width="100" height="100" alt="User Satisfaction">
-				
-				<div class="features__item2">
-					<h4 class="features__title">User Satisfaction</h4>
-					<div class="features__text">Far far away, behind the word mountains, far from the countries Vokalia	<span id="dots3">...</span><span id="more3">and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</span></div>
-					<a class="features__link" onclick="readMore()" id="btn3">Read more</a>
-				</div>
-
-				<!------------24/7 Support------------------------>
-				<img class="icon4" src="img/features/24-7(orange).png" width="100" height="100" alt="24/7 Support">
-				
-				<div class="features__item2">
-					<h4 class="features__title">24/7 Support</h4>
-					<div class="features__text">Far far away, behind the word mountains, far from the countries Vokalia	<span id="dots4">...</span><span id="more4">and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</span></div>
-					<a class="features__link" onclick="readMore()" id="btn4">Read more</a>
-				</div>
-			</div> <!-- features -->
-
-		</div> <!-- container -->	
-	</div>	<!-- features-block -->
-
-<!-- Products -->
-	<div class="container" id="prod_container" onmousedown="return false" onselectstart="return false">
-		<div class="products__far">
-			<h3 class="key__title">products</h3>
-			<div class="key__text" id="prod_text">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</div>
-		</div> <!-- products__far -->
-
-		<div class="products">
-			<div class="products__item">
-				<img src="img/lorem.png" class="prod__img" width="300px" height="180px">
-				<h4 class="products__title">Lorem ipsum</h4>
-				<div class="products__text">Far far away, behind the word mountains, far from the countries Vokalia	and Consonantia, there live the blind texts.<span id="dots5">..</span><span id="more5"> Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</span></div>
-				<a class="features__link" onclick="readMore()" id="btn5">Read more</a>
-			</div> <!-- products__item -->
-
-			<div class="products__item">
-				<img src="img/architecto.jpg" class="prod__img" width="300px" height="180px">
-				<h4 class="products__title">Architecto nihil</h4>
-				<div class="products__text">Far far away, behind the word mountains, far from the countries Vokalia	and Consonantia, there live the blind texts.<span id="dots6">..</span><span id="more6"> Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</span></div>
-				<a class="features__link" onclick="readMore()" id="btn6">Read more</a>
-			</div> <!-- products__item -->
-
-			<div class="products__item">
-				<img src="img/animi.jpg" class="prod__img" width="300px" height="180px">
-				<h4 class="products__title">Animi earum</h4>
-				<div class="products__text">Far far away, behind the word mountains, far from the countries Vokalia	and Consonantia, there live the blind texts.<span id="dots7">..</span><span id="more7"> Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</span></div>
-				<a class="features__link" onclick="readMore()" id="btn7">Read more</a>
-			</div> <!-- products__item -->
-
-			<div class="products__item">
-				<img src="img/Recusandae.jpg" class="prod__img" width="300px" height="180px">
-				<h4 class="products__title">Recusandae iste</h4>
-				<div class="products__text">Far far away, behind the word mountains, far from the countries Vokalia	and Consonantia, there live the blind texts.<span id="dots8">..</span><span id="more8"> Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</span></div>
-				<a class="features__link" onclick="readMore()" id="btn8">Read more</a>
-			</div> <!-- products__item -->
-		</div> <!-- products -->
-	</div> <!-- container -->
-
-<!-- Clients -->
-	<div class="clients">
-		<div class="clients__inner">
-			<a href="##"><img src="img/clients/client_1.png" alt="Square"></a>
-			<a href="##"><img src="img/clients/client_2.png" alt="airbnb"></a>
-			<a href="##"><img src="img/clients/client_3.png" alt="EVERNOTE"></a>
-			<a href="##"><img src="img/clients/client_4.png" alt="Pinterest"></a>
-		</div>
-	</div>
-
-<!-- Quotation -->
-	<div class="quotation" onmousedown="return false" onselectstart="return false">
-		<div class="quotation__inner">
-			<div class="quotation__text">“Design is not just what it looks like and feels like. Design is how it works.”</div>
-
-			<div class="quotation__author">- Steve Jobs</div>
-		</div> <!-- quotation__inner -->
-	</div><!-- quotation -->
+			</div><!-- subscribe_inner -->
+		</div><!-- container -->
+	</div><!-- subscribe_block -->
 
 <!-- Footer -->
-	<footer class="footer">
-		<div class="container">
-			<div class="footer__inner">
+	<footer id="footer">
+		<div class="footer__inner">
 
-				<div class="footer__block">
+			<article class="article">
+				<div class="container">
+					<h2 class="footer__title">get in touch</h2>
+					
+					<h4 class="footer__subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi repellendus illum aliquam, provident, ipsa praesentium quod necessitatibus consequuntur ducimus labore, adipisci! Amet perferendis dolor atque suscipit possimus culpa aut porro.</h4>
 
-					<div class="footer__left">
-						<div class="footer__title">Booster</div>
-						<div class="footer__text">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</div>
-						<div class="social">
-							<a href="##" class="social_icons" id="facebook"></a>
-							<a href="##" class="social_icons" id="twitter"></a>
-							<a href="##" class="social_icons" id="inst"></a>
-							<a href="##" class="social_icons" id="in"></a>
-							<a href="##" class="social_icons" id="youtube"></a>
-						</div><!-- social -->
-					</div> <!-- footer__left -->
-				</div><!-- footer__block -->
+					<div class="red--line" id="lefted_line"></div>
+				</div>	<!-- container -->
+			</article>
+
+			<aside class="contact_info">
 				
+				<div class="contact__title">contact info</div>
+
+				<h4 class="contact__address">Jalalabad 24 / A, Ambaarkhana, Sylhet,  Bangladesh</h4>
+
+				<h4 class="contact__mail">redwan@deviserweb.com</h4>
+
+				<h4 class="contact__number">(+88) 017 617 46373</h4>
+
+			</aside><!-- contact_info -->
+
+			<section class="info__input">
+				<div class="input__places">
+					<input class="name__textbox" type="name" placeholder="Name">
+					<input class="name__textbox" type="email" placeholder="Your Mail">
+
+					<textarea class="message" type="massage" class="massage" placeholder="Type your message"></textarea><br>
+				<a class="btn message__btn" href="##" onclick="alert('Sorry...This site for example only')">send message</a>
+
+				</div>
+
+
 				
-				<div class="footer__block">
-					<div class="footer__right">
 
-						<!-- 1 -->
-						<div class="right__inner">
-							
-							<div class="footer_company">
-								<h3 class="footer_right_title">company</h3>
-								<a href="##" class="footer__link">About</a>
-								<a href="##" class="footer__link">Contact</a>
-								<a href="##" class="footer__link">News</a>
-								<a href="##" class="footer__link">Support</a>
-								<a href="##" class="footer__link">Career</a>
-							</div><!-- footer_company -->
-						</div> <!-- right__inner -->
+			</section>
 
-						<!-- 2 -->
-						<div class="right__inner">	
-							<div class="footer_features">
-								<h3 class="footer_right_title">features</h3>
-									<div style="margin-bottom: 10px">
-										<img src="img/check-mark.png" width="13px" height="13px" class="check_mark">
-										<a href="##" class="footer__link">Lorem ipsum dolor.</a>
-									</div>
+			<div class="linear__aside">
+				<div class="contact__title">contact info</div>
 
-									<div style="margin-bottom: 10px">
-										<img src="img/check-mark.png" width="13px" height="13px" class="check_mark">
-										<a href="##" class="footer__link">Ipsum mollitia dolore.</a>
-									</div>
+				<h4 class="contact__address">Jalalabad 24 / A, Ambaarkhana, Sylhet,  Bangladesh</h4>
 
-									<div style="margin-bottom: 10px">
-										<img src="img/check-mark.png" width="13px" height="13px" class="check_mark">
-										<a href="##" class="footer__link">Eius similique in.</a>
-									</div>
+				<h4 class="contact__mail">redwan@deviserweb.com</h4>
 
-									<div style="margin-bottom: 10px">
-										<img src="img/check-mark.png" width="13px" height="13px" class="check_mark">
-										<a href="##" class="footer__link">Aspernatur similique nesciunt.</a>
-									</div>
+				<h4 class="contact__number">(+88) 017 617 46373</h4>
+			</div><!-- linear__aside -->
 
-									<div style="margin-bottom: 10px">
-										<img src="img/check-mark.png" width="13px" height="13px" class="check_mark">
-										<a href="##" class="footer__link">Laboriosam ad commodi.</a>
-									</div>
-							</div><!-- footer_features -->
-						</div> <!-- right__inner -->
-
-						<!-- 3 -->
-						<div class="right__inner">	
-							<div class="footer_products">
-								<h3 class="footer_right_title">products</h3>
-									<div style="margin-bottom: 10px">
-										<img src="img/check-mark.png" width="13px" height="13px" class="check_mark">
-										<a href="##" class="footer__link">Lorem ipsum dolor.</a>
-									</div>
-
-									<div style="margin-bottom: 10px">
-										<img src="img/check-mark.png" width="13px" height="13px" class="check_mark">
-										<a href="##" class="footer__link">Ipsum mollitia dolore.</a>
-									</div>
-
-									<div style="margin-bottom: 10px">
-										<img src="img/check-mark.png" width="13px" height="13px" class="check_mark">
-										<a href="##" class="footer__link">Eius similique in.</a>
-									</div>
-
-									<div style="margin-bottom: 10px">
-										<img src="img/check-mark.png" width="13px" height="13px" class="check_mark">
-										<a href="##" class="footer__link">Aspernatur similique nesciunt.</a>
-									</div>
-
-									<div style="margin-bottom: 10px">
-										<img src="img/check-mark.png" width="13px" height="13px" class="check_mark">
-										<a href="##" class="footer__link">Laboriosam ad commodi.</a>
-									</div>
-							</div><!-- footer_products -->
-						</div> <!-- right__inner -->
-
-					</div> <!-- footer__right -->
-				</div><!-- footer__block -->
-			</div><!-- footer__inner -->
-		</div><!-- container -->
+		</div><!-- footer__inner -->
 	</footer>
 
+<!-- CopyRight -->
+	<div class="copyright">
+		<div class="container">
+			<div class="copyright__inner">
+
+				<div class="copyright__item">
+					<h4 class="copyright__title">© Copyright @Junaed 2016, All rights reserved.</h4>
+				</div>
+
+				<div class="copyright__item">
+					<img src="img/copyright icons/twitter.png" alt="">
+					<img src="img/copyright icons/in.png" alt="">
+					<img src="img/copyright icons/google_plus.png" alt="">
+					<img src="img/copyright icons/facebook.png" alt="">
+				</div>
+
+			</div><!-- copyright__inner -->
+		</div><!-- container -->
+	</div><!-- copyright -->
 
 </body>
 </html>
